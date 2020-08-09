@@ -1,4 +1,7 @@
 # Thermodynamic Cycles
+
+<img src="Examples/Two_Phase_Gas_Cycle/T-s_diagram_regenerative_rankine.png" width="500">
+
 Python code to construct thermodynamic cycles. Create several diagrams (T-s, h-s, P-v e.t.c.) and calculate state and processes variables such as temperature, entropy, work e.t.c.. Save all the above to .png and .csv files correspondingly. It works for the following working fluids:
 
 - Ideal gas,
