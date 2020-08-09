@@ -17,6 +17,6 @@ Solving the Van der Walls equation numericaly using Newtons method. Works for Is
 
 ### Two Phase gas.
 
-Solving the Van der Walls equation numericaly using Newtons method. Works for Isobaric and Isothermal processes. The others types of processes are to be made.
+Using @CoolProp library to calculate system variables. Works for Isobaric and Adiabatic processes. The others types of processes are to be made.
 
 _Future improvements are to comment the code and make it work for all types of processes._
