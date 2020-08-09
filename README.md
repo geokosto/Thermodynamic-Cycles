@@ -6,9 +6,9 @@ Python code to construct thermodynamic cycles. Create several diagrams (T-s, h-s
 
 - Ideal gas,
 
-- Van der Walls gas and 
+- Van der Walls fluid and 
 
-- Two Phase gas.
+- Two Phase fluid.
 
 ### Ideal gas.
 
