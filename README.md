@@ -4,7 +4,37 @@
 <img src="data/v-p_diagram_otto.png" width="500" align="center">
 </p>
 
-## States values
+Software written in python that simulate thermodynamic processes. 
+
+Construct thermodynamic cycles, calculate state and processes variables such as temperature, entropy, work e.t.c., create several diagrams (T-s, h-s, P-v e.t.c.) and save all the above to .png and .csv files correspondingly. 
+
+Currently the following working fluids are supported:
+
+- Ideal gas,
+
+- Van der Walls gas and 
+
+- Two Phase fluid.
+
+The factory software design pattern is heavily used.
+
+### Ideal gas.
+
+Implementation of the ideal gas formulations for Isobaric, Isochoric and Isentropical processes.The others types of processes are to be made.
+
+### Van der Walls gas.
+
+Solving the Van der Walls equation numericaly using Newtons method. Works for Isobaric and Isothermal processes. The others types of processes are to be made.
+
+### Two Phase fluid.
+
+Using @CoolProp library to calculate system variables. Works for Isobaric and Adiabatic processes. The others types of processes are to be made.
+
+_Future improvements are to comment the code and implement all types of processes for each working fluid._
+
+## Example results:
+### States values
+
 
 | States | s [kJ/kgK] | P [bar] | T [K]  | $\theta\ [ ^\circ C ]$ | x [--]                    | h [kJ]   |
 | ------ | ---------- | ------- | ------ | ---------------------- | ------------------------- | -------- |
@@ -19,7 +49,7 @@
 | 7      | 7.162      | 10.0    | 583.21 | 310.06                 | 1.147 : Superheated Steam | 3073.203 |
 | 8      | 7.297      | 1.5     | 398.31 | 125.16                 | 1.013 : Superheated Steam | 2722.105 |
 
-## Processes values
+### Processes values
 
 | Process | Type      | q [kJ/kg]    | wt [kJ/kg]   | w [kJ/kg]    |
 | ------- | --------- | ------------ | ------------ | ------------ |
@@ -36,24 +66,4 @@
 
 
 
-Python code to construct thermodynamic cycles. Create several diagrams (T-s, h-s, P-v e.t.c.) and calculate state and processes variables such as temperature, entropy, work e.t.c.. Save all the above to .png and .csv files correspondingly. It works for the following working fluids:
 
-- Ideal gas,
-
-- Van der Walls fluid and 
-
-- Two Phase fluid.
-
-### Ideal gas.
-
-Implementation of the ideal gas formulations for Isobaric, Isochoric and Isentropical processes.The others types of processes are to be made.
-
-### Van der Walls gas.
-
-Solving the Van der Walls equation numericaly using Newtons method. Works for Isobaric and Isothermal processes. The others types of processes are to be made.
-
-### Two Phase gas.
-
-Using @CoolProp library to calculate system variables. Works for Isobaric and Adiabatic processes. The others types of processes are to be made.
-
-_Future improvements are to comment the code and make it work for all types of processes._
